@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #a9c0e4;
+  }
+  
+  h1, h2, h3 {
+    color: #000000;
+    margin-bottom: 1%;
+  }
+  
+  #title {
+    color: #42ac34;
+    text-align: center;
+  }
+  
+  .campo {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .botao {
+    padding: 10px 20px;
+    background-color: #1b6828;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .botao:hover {
+    background-color: #278236;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  .justificado {
+    text-align: justify;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  #selectedCriteria {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .comparison-matrix {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .comparison-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .comparison-input {
+    width: 60px;
+    margin-right: 10px;
+  }
+  
+  .criteria-label {
+    width: 70px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Estilos para a matriz de comparação pareada */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  /* Estilos adicionais para linhas e colunas */
+  th.criteria-label {
+    background-color: #f0f0f0;
+  }
+  
+  td.criteria-label {
+    font-weight: bold;
+  }
+  
+  /* Linhas separadoras */
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+  
+  .consistent {
+    color: green;
+  }
+  
+  .inconsistent {
+    color: red;
+  }
+  
