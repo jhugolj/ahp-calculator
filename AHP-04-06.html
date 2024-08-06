@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AHP Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Analytic Hierarchy Process Calculator</h1>
+    <form id="ahpForm">
+      <h2>Passo 1</h2>
+      <span> Digite os Critérios (Mínimo 3 e Máximo 5)</span>
+      <div id="criteriaInputs" class="campo">
+        <div class="criteria-item">
+                  <input type="text" name="criteria" placeholder="Criterion 1">
+        </div>
+        <div class="criteria-item">
+          <input type="text" name="criteria" placeholder="Criterion 2">
+        </div>
+        <div class="criteria-item">
+          <input type="text" name="criteria" placeholder="Criterion 3">
+        </div>
+      </div>
+      <button type="button" class="botao" onclick="addCriterion()">Add Criterion</button>
+      <button type="button" class="botao" onclick="removeCriterion()">Remove Criterion</button>
+      <hr>
+      <h2>Passo 2:</h2>Comparação pareada para critério<br>
+      <button type="button" class="botao" onclick="generatePairwiseInputs()">Gerar Comparação</button>
+      <div id="pairwiseComparison"></div>
+      <br>
+      <button type="button" class="botao" id="calculateButton">Calcular AHP</button>
+      <hr>
+      <h2>Resultados:</h2>
+      <p id="consistencyMessage" class="status-message"><b>Índice de Consistência:</b> </p>
+      <p id="adjustmentSuggestions" class="status-message"><b>Sugestões de ajuste:</b> </p>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
